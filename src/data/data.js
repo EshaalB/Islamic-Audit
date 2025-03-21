@@ -1,4 +1,4 @@
-const sinsData = [
+const rawSinsData= [
   { "id": 21, "act": "oppression (zulm)", "reference": "Quran 42:42 - 'The way is only against those who oppress people and tyrannize on the earth without right; those will have a painful punishment.'; Hadith - Sahih Muslim 2578: 'Beware of the supplication of the oppressed, for there is no barrier between it and Allah.'", "type": "sin" },
   { "id": 22, "act": "suicide", "reference": "Quran 4:29 - 'Do not kill yourselves; indeed, Allah is to you ever Merciful.'; Hadith - Sahih Bukhari 1365: 'Whoever kills himself with something will be punished with it on the Day of Resurrection.'", "type": "sin" },
   { "id": 23, "act": "breaking family ties", "reference": "Quran 47:22-23 - 'Would you then, if you were given authority, spread corruption in the land and sever your ties of kinship? Those are the ones Allah has cursed.'; Hadith - Sahih Muslim 2556: 'The one who severs family ties will not enter Paradise.'", "type": "sin" },
@@ -256,5 +256,44 @@ const sinsData = [
     }
   
 ];
+
+// Helper: parse the raw reference string to extract Quran and Hadith references
+function parseReference(ref) {
+  let quranRef = null;
+  let hadithRef = null;
+
+  // First, try splitting by ";" if present
+  let parts = ref.split(";");
+  if (parts.length < 2) {
+    // if no semicolon, try pipe as separator
+    parts = ref.split("|");
+  }
+
+  // Look for parts containing keywords
+  parts.forEach(part => {
+    const trimmed = part.trim();
+    if (trimmed.toLowerCase().includes("quran")) {
+      quranRef = trimmed;
+    }
+    if (trimmed.toLowerCase().includes("hadith")) {
+      hadithRef = trimmed;
+    }
+  });
+
+  return { quranRef, hadithRef };
+}
+
+// Transform the raw data into the new structure
+const sinsData = rawSinsData.map(item => {
+  const { quranRef, hadithRef } = parseReference(item.reference);
+  return {
+    id: item.id,
+    act: item.act,
+    type: item.type,
+    quranRef: quranRef || "No Quran reference available.",
+    hadithRef: hadithRef || "No Hadith reference available."
+  };
+});
+
 
 export default sinsData;
