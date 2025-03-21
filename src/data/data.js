@@ -168,7 +168,93 @@ const sinsData = [
     "act": "homosexuality (LGBT)", 
     "reference": "Hadith - Sunan al-Tirmidhi 1456: 'Whoever you find committing the act of the people of Lut, kill the one who does it and the one to whom it is done.' (Also referenced in Quran 26:165-166 and 7:80-81, condemning the act of Lut's people)", 
     "type": "sin" 
-  }
+  },
+  
+    {
+      "id": 197,
+      "act": "Zina (Fornication/Adultery)",
+      "reference": "Quran 17:32 - 'And do not approach unlawful sexual intercourse. Indeed, it is an immorality and an evil way.' | Hadith - Sahih al-Bukhari 6805: 'No man is alone with a woman but the third of them is Satan.'",
+      "type": "sin"
+    },
+    {
+      "id": 198,
+      "act": "Pornography",
+      "reference": "Quran 24:30-31 - 'Tell the believing men to lower their gaze and guard their chastity...' | Hadith - Sahih al-Bukhari 6474: 'The (adultery) of the eyes is looking, and the (adultery) of the tongue is speaking... and the private parts confirm or deny that.'",
+      "type": "sin"
+    },
+    {
+      "id": 199,
+      "act": "Free Mixing of Males and Females",
+      "reference": "Quran 33:53 - 'And when you ask [his wives] for something, ask them from behind a partition. That is purer for your hearts and their hearts.' | Hadith - Sunan Abu Dawood 5272: 'It is not permissible for a man to be alone with a woman except that there is a Mahram with her.'",
+      "type": "sin"
+    },
+    {
+      "id": 200,
+      "act": "Male-Female Communication (Unnecessary)",
+      "reference": "Quran 33:32 - '...do not be soft in speech [with men], lest he in whose heart is disease should covet...' | Hadith - Sahih Muslim 2221: 'A man should not be alone with a woman unless a Mahram is present.'",
+      "type": "sin"
+    },
+    {
+      "id": 201,
+      "act": "Male-Female Friendships",
+      "reference": "Quran 5:5 - 'And do not take them as intimate friends...' | Hadith - Jami` at-Tirmidhi 1171: 'A man is upon the religion of his close friend, so let one of you look at whom he befriends.'",
+      "type": "sin"
+    },
+    {
+      "id": 202,
+      "act": "Online Relationships (Texting, Chatting, Social Media)",
+      "reference": "Quran 24:30 - 'Tell the believing men to lower their gaze and guard their private parts...' | Fatwa - IslamQA #1497: 'Private conversations between non-mahrams, even if virtual, can lead to fitnah.'",
+      "type": "sin"
+    },
+    {
+      "id": 203,
+      "act": "Flirting and Casual Relationships",
+      "reference": "Quran 33:35 - 'Indeed, the men who guard their chastity and the believing women who do so... Allah has prepared for them forgiveness and a great reward.' | Hadith - Sunan Ibn Majah 3933: 'Whoever guarantees me what is between his jaws and what is between his legs, I shall guarantee him Paradise.'",
+      "type": "sin"
+    },
+    {
+      "id": 204,
+      "act": "Cross-Dressing & Gender Fluidity",
+      "reference": "Hadith - Sahih al-Bukhari 5885: 'The Messenger of Allah cursed men who imitate women and women who imitate men.' | Quran 4:119 - 'And I will command them so they will change the creation of Allah.'",
+      "type": "sin"
+    },
+    {
+      "id": 205,
+      "act": "Transgenderism and Gender Reassignment",
+      "reference": "Quran 42:49-50 - 'To Allah belongs the dominion of the heavens and the earth; He creates what He wills...' | Hadith - Sunan Abu Dawood 4928: 'Allah has cursed those who change the creation of Allah.'",
+      "type": "unclear"
+    },
+    {
+      "id": 206,
+      "act": "Third-Gender (Khawaja Sira, Hijra, Eunuchs)",
+      "reference": "Hadith - Sunan Abu Dawood 4928: 'The Prophet cursed the mukhannathun (effeminate men) and mutarajjilat (masculine women).' | Classical scholars differentiate between congenital conditions and intentional imitation.",
+      "type": "unclear"
+    },
+    {
+      "id": 207,
+      "act": "Polygamy (Multiple Wives)",
+      "reference": "Quran 4:3 - 'Marry those that please you of [other] women, two or three or four. But if you fear that you will not be just, then [marry only] one.' | Hadith - Sahih Muslim 1467: 'Whoever has two wives and inclines to one over the other will come on the Day of Judgment with one of his sides leaning.'",
+      "type": "unclear"
+    },
+    {
+      "id": 208,
+      "act": "Mut'ah (Temporary Marriage)",
+      "reference": "Hadith - Sahih Muslim 1406: 'The Messenger of Allah prohibited Mut'ah (temporary marriage) and the meat of domestic donkeys at the time of Khaybar.' | Quran 4:24 (interpreted differently by sects).",
+      "type": "unclear"
+    },
+    {
+      "id": 209,
+      "act": "Misyar (Marriage of Convenience)",
+      "reference": "Fatwa - Various Islamic scholars differ on its permissibility. Some consider it halal but discouraged. | Quran 30:21 - 'And among His signs is that He created for you spouses that you may find tranquility in them.'",
+      "type": "unclear"
+    },
+    {
+      "id": 210,
+      "act": "LGBTQ+ Identity vs. Inclinations",
+      "reference": "Quran 7:81 - 'Indeed, you approach men with desire, instead of women. Rather, you are a transgressing people.' | Fatwa - Many scholars differentiate between sinful actions and uncontrollable inclinations.",
+      "type": "unclear"
+    }
+  
 ];
 
 export default sinsData;
