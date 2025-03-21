@@ -197,7 +197,7 @@ const sinsData = [
     {
       "id": 201,
       "act": "Male-Female Friendships",
-      "reference": "Quran 5:5 - 'And do not take them as intimate friends...' | Hadith - Jami` at-Tirmidhi 1171: 'A man is upon the religion of his close friend, so let one of you look at whom he befriends.'",
+      "reference": " | Hadith - Jami` at-Tirmidhi 1171: 'A man is upon the religion of his close friend, so let one of you look at whom he befriends.'",
       "type": "sin"
     },
     {
