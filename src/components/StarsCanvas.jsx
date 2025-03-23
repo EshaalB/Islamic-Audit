@@ -7,11 +7,11 @@ function Stars() {
 
   // Generate random positions for a larger area
   const [positions] = useState(() => {
-    // 2000 points => array of length 6000
-    const arr = new Float32Array(2000 * 3);
+    // 5000 points => array of length 15000
+    const arr = new Float32Array(5000 * 3);
     for (let i = 0; i < arr.length; i += 3) {
-      // Increase radius to 3 for more coverage
-      const r = 3 * Math.cbrt(Math.random());
+      // Increase radius for a bigger spread
+      const r = 6 * Math.cbrt(Math.random());
       const theta = 2 * Math.PI * Math.random();
       const phi = Math.acos(2 * Math.random() - 1);
 
@@ -22,7 +22,7 @@ function Stars() {
     return arr;
   });
 
-  // Slow rotation for a gentle effect
+  // Rotate the starfield for a gentle effect
   useFrame((_, delta) => {
     if (ref.current) {
       ref.current.rotation.x -= delta / 15;
@@ -36,7 +36,7 @@ function Stars() {
         <PointMaterial
           transparent
           color="#ffffff"
-          size={0.01}   // Increase star size
+          size={0.01} // Star size
           sizeAttenuation
           depthWrite={false}
         />
@@ -47,9 +47,8 @@ function Stars() {
 
 export default function StarsCanvas() {
   return (
-    // Use fixed so it covers the screen even if the page scrolls
     <div className="fixed inset-0 -z-10">
-      <Canvas camera={{ position: [0, 0, 5], near: 0.1, far: 1000 }}>
+      <Canvas camera={{ position: [0, 0, 8], near: 0.1, far: 1000 }}>
         <Stars />
       </Canvas>
     </div>
